@@ -5,7 +5,7 @@ using namespace std;
 #define deb(x) cout << #x <<" = "<< x <<"\n" 
 #define vi vector<int>
 
-// Corner Test Cases: Check for negative numbers and 0
+// Corner Test Cases: Check for negative numbers and `0`
 
 
 int solve_Iterative(int n){
@@ -23,7 +23,7 @@ int solve_Iterative(int n){
 
 int count_Digits_Recursive(int n){
 
-    /* T(n) = T(n/10) + 1;
+    /* Recursive Function: T(n) = T(n/10) + 1;
 
     TC = O(Log10(N) 
     SC = O(d) where d is no of digits of N. 
@@ -41,15 +41,16 @@ int Lograthim_solution(int n){
     /*
     1) For an integer number that has n digits, it's value is between 10^(n - 1)(included) and 10^n,.
     so log10(number) is between n - 1(included) and n. 
+    *** Eg: 2 digit numbers gonna be in range 10^(1)[Inclusive] to 10(2)[Exclusive].
 
-    Eg: 2 digit numbers gonna be in range 10^(1)[Inclusive] to 10(2)[Exclusive].
-    
     2)Then the function floor cuts down the fractional part(as log return double), leaves the result as n - 1. 
+
     3) Finally, adding 1 to it gives the number of digits.
 
     TC: O(Log10(n));
     SC: O(1)
-    *************BEST SOLUTION ************************
+
+    ***************************************BEST SOLUTION ***************************************
     */
 
    if(n==0) return 1; // Log(0) isnt defined as because you can never get zero by raising anything to the power of anything else.
