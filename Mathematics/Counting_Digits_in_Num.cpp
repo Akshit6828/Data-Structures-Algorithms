@@ -2,8 +2,7 @@
 using namespace std;
 #define boost ios::sync_with_stdio(0); cin.tie(0)
 #define ll long long 
-#define deb(x) cout << #x <<" = "<< x <<"\n" 
-#define vi vector<int>
+#define deb(x) cout << #x <<" = "<< x <<"\n"
 
 // Corner Test Cases: Check for negative numbers and `0`
 
