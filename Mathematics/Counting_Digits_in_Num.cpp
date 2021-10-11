@@ -4,10 +4,11 @@ using namespace std;
 #define ll long long 
 #define deb(x) cout << #x <<" = "<< x <<"\n"
 
-// Corner Test Cases: Check for negative numbers and `0`
-
-
-int solve_Iterative(int n){
+/* Corner Test Cases: 
+	Check for negative numbers and `0`
+	Check for integer overflow. `int` cant find variable length for more than 10 digits. Preffered 'long`.
+*/
+int solve_Iterative(long n){
     
     // TC: O(d) where d is len of number 'n'
     // SC: O(1)
@@ -20,7 +21,7 @@ int solve_Iterative(int n){
     return count;
 }
 
-int count_Digits_Recursive(int n){
+int count_Digits_Recursive(long n){
 
     /* Recursive Function: T(n) = T(n/10) + 1;
 
@@ -29,13 +30,13 @@ int count_Digits_Recursive(int n){
     
     */
     if(n==0)
-    return 1; // As for the case when no digit is left we need to return 0;
+    return 0; // As for the case when no digit is left we need to return 0;
     else
     return 1 + count_Digits_Recursive(n/10);
 
 }
 
-int Lograthim_solution(int n){
+int Lograthim_solution(long n){
 
     /*
     1) For an integer number that has n digits, it's value is between 10^(n - 1)(included) and 10^n,.
@@ -59,11 +60,11 @@ int Lograthim_solution(int n){
 }
 
 int main(){
-    boost;
+    //boost;
     int t;
     cin>>t;
     while(t--){
-    int n;
+    long n;
     cin>>n;
     cout<<"Iterative Sol: "<<solve_Iterative(n)<<endl;
     cout<<"Recursive Sol: "<<count_Digits_Recursive(n)<<endl;
