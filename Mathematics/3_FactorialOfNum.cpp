@@ -6,7 +6,7 @@ using namespace std;
 
 
 
-int IterativeSol(int n){
+int IterativeSol(int n){ // TC: O(n) SC: O(1)
 		int ans =1;
 		for(int i =1;i<=n;++i){
 				ans*=i;
@@ -14,7 +14,7 @@ int IterativeSol(int n){
 		return ans;
 }
 
-int RecursiveSol(int n){
+int RecursiveSol(int n){ //  TC: O(n),  SC: O(n) for Stack Space
 		if(n ==0 || n ==1)
 				return 1;
 		return n*RecursiveSol(n-1);

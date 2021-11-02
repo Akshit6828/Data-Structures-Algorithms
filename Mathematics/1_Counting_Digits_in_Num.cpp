@@ -21,12 +21,9 @@ int solve_Iterative(long n){
     return count;
 }
 
-int count_Digits_Recursive(long n){
+int count_Digits_Recursive(long n){ // TC = O(Log10(N) , SC = O(d) where d is no of digits of N.
 
-    /* Recursive Function: T(n) = T(n/10) + 1;
-
-    TC = O(Log10(N) 
-    SC = O(d) where d is no of digits of N. 
+    /* Recursive Function: T(n) = T(n/10) + 1; 
     
     */
     if(n==0)
@@ -36,19 +33,16 @@ int count_Digits_Recursive(long n){
 
 }
 
-int Lograthim_solution(long n){
+int Lograthim_solution(long n){ // TC: O(Log10(n)), SC: O(1)
 
     /*
-    1) For an integer number that has n digits, it's value is between 10^(n - 1)(included) and 10^n,.
-    so log10(number) is between n - 1(included) and n. 
-    *** Eg: 2 digit numbers gonna be in range 10^(1)[Inclusive] to 10(2)[Exclusive].
+    INTERESTING FACTS FOR EFFECTIVE SOLUTION:
 
+    1) For an integer number that has n digits, it's value is between 10^(n - 1)(included) and 10^n. 
+    So log10(number) is between n - 1(included) and n. 
+    -- Eg: 2 digit numbers gonna be in range 10^(1)[Inclusive] to 10(2)[Exclusive].
     2)Then the function floor cuts down the fractional part(as log return double), leaves the result as n - 1. 
-
     3) Finally, adding 1 to it gives the number of digits.
-
-    TC: O(Log10(n));
-    SC: O(1)
 
     ***************************************BEST SOLUTION ***************************************
     */

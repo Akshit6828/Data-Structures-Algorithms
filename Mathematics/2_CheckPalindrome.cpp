@@ -6,7 +6,7 @@ using namespace std;
 // Checking based on the fact that for any num xy we have x*10 +y= xy;
 
 
-bool checkPalindrome(int n){
+bool checkPalindrome(int n){ // TC: O(d) where d is length of digit.
 	
 	if(n<=9&&n>=0) return true;
 		
