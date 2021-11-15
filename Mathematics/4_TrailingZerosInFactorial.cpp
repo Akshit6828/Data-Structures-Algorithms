@@ -31,7 +31,7 @@ int CountZeroEfficient(int n){ // O(Log5(N)) or LogN solution.
  	1) Zero's are formed by numbers of 2's and 5's in prime factorization.
  	2) For any number no of 5's are always less than 2's.
 	--- Thus we can calculate the no of 5's occuring in the prime factorization of number as 2*5= 10( One Zero)
- 	3)  There gona be atleast floor(n/5) number of 5's because there are other numbers such as 25 which have 2 5's as prime factor.
+ 	3) There gona be atleast floor(n/5) number of 5's because there are other numbers such as 25 which have 2 5's as prime factor.
  	4) It solves major issues that we arnt calcuating whole factorial 
  	*/
 	

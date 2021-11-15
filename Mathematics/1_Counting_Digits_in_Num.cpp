@@ -8,10 +8,7 @@ using namespace std;
 	Check for negative numbers and `0`
 	Check for integer overflow. `int` cant find variable length for more than 10 digits. Preffered 'long`.
 */
-int solve_Iterative(long n){
-    
-    // TC: O(d) where d is len of number 'n'
-    // SC: O(1)
+int solve_Iterative(long n){ // TC: O(d) where d is len of number 'n'. SC: O(1)
     int count =0;
     if(n ==0) return 1;
     while(n!=0){
@@ -21,16 +18,33 @@ int solve_Iterative(long n){
     return count;
 }
 
-int count_Digits_Recursive(long n){ // TC = O(Log10(N) , SC = O(d) where d is no of digits of N.
+int count_Digits_Recursive(long n){ // TC = O(Log10(N)) , SC = O(d) where d is no of digits of N { Stack Space}.
 
-    /* Recursive Function: T(n) = T(n/10) + 1; 
-    
-    */
-    if(n==0)
-    return 0; // As for the case when no digit is left we need to return 0;
+    /* Recursive Function: T(n) = T(n/10) + 1; */
+    if(n<0)
+    n*=-1;
+    if(n==0) // Handling 0 as a special case if we encounter 0 we can return 1;
+    return 1;
+
+    if(n<=9)
+    return 1; // As for the case when no digit is left we need to return 0;
     else
     return 1 + count_Digits_Recursive(n/10);
 
+}
+
+int countDigitsRecursive2(long n){ // TC : O(LogN), SC = O(d) {Stack space}.
+
+// F(52) = 1 + f(2): --> f(2) <-- Return 1
+//  2    = 1 + 1 :  <--  f(2)---Return 1 
+
+/* Recursive Function: T(n) = T(n/10) + 1; */
+    if(n<0)
+    n*=-1;
+    if(n <=9)
+    return 1;
+    else
+    return 1 + countDigitsRecursive2(n/10); 
 }
 
 int Lograthim_solution(long n){ // TC: O(Log10(n)), SC: O(1)
@@ -54,7 +68,7 @@ int Lograthim_solution(long n){ // TC: O(Log10(n)), SC: O(1)
 }
 
 int main(){
-    //boost;
+    boost;
     int t;
     cin>>t;
     while(t--){
@@ -62,7 +76,8 @@ int main(){
     cin>>n;
     cout<<"Iterative Sol: "<<solve_Iterative(n)<<endl;
     cout<<"Recursive Sol: "<<count_Digits_Recursive(n)<<endl;
-    cout<<"Log Solution: "<<Lograthim_solution(n);
+    cout<<"Log Solution: "<<Lograthim_solution(n)<<endl;
+    cout<<"My Recusrive Solution 2: "<<countDigitsRecursive2(n);
     }
     return 0;
 }
