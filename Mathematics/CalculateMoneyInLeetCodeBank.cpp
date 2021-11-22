@@ -7,6 +7,26 @@ using namespace std;
 
 class Solution {
 public:
+
+
+    int totalMoneyOptimize(int n){ // TC: O(1) Sc: O(1)
+        int sum = 0;
+        int full = n/7;
+        int remaining = n%7;
+        
+        sum+= full*28 + full *(full- 1 ) * 7/2;
+        sum+=(remaining*(remaining+1)/2)+full*remaining;
+        
+        return sum;
+    }
+
+    int totalMoneyOptimizeSecond(int n){ // TC: O(1) SC: O(1)
+    // Using concept of 2D matrix:
+        int row = (n - 1) / 7;
+        int col = (n - 1) % 7;
+        return row * 28 + (7 * (row - 1) * row + (col + 1) * (2 * row + 2 + col)) / 2;
+    }
+
     int totalMoney(int n) { // TC: O(n/7) SC: O(1)
         
     /* 
@@ -52,9 +72,9 @@ int main(){
     int t;
     cin>>t;
     while(t--){
-        cout<<obj.totalMoney(3)<<endl;
-        cout<<obj.totalMoney(10)<<endl;
-        cout<<obj.totalMoney(24)<<endl;
+        cout<<obj.totalMoney(15)<<endl;
+        cout<<obj.totalMoneyOptimize(15)<<endl;
+        cout<<obj.totalMoneyOptimizeSecond(15)<<endl;
     }
     return 0;
 }
