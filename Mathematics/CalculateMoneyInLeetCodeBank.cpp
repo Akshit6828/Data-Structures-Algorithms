@@ -5,6 +5,8 @@ using namespace std;
 #define deb(x) cout << #x <<" = "<< x <<"\n" 
 #define vi vector<int>
 
+// READ Optimization: https://leetcode.com/problems/calculate-money-in-leetcode-bank/discuss/1009192/C%2B%2B-O(1)-Math
+
 class Solution {
 public:
 
