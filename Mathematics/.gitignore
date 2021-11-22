@@ -3,6 +3,6 @@
 *.run
 run
 *.exe
-*.bin
-/.cph
-/.vscode
+*.bin/
+/.cph/
+/.vscode/
