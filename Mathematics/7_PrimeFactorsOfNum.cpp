@@ -57,7 +57,7 @@ void OptimizeOne(int n){ // TC:O(Sqrt(n)*Log(n))  SC: O(1)
 	
 }
 
-void OptimizeFurther(int n){ 
+void OptimizeFurther(int n){// TC: O(root(n)) if ignoring inner LOG(N) factor because it will run at max root(n) times.  SC: O(1) 
 // Furthur optimization is based on the fact that if we explicitly check for 2 and 3. We can save many iterations.
 	
 	bool foundPrimeFactors = false;
