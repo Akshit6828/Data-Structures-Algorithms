@@ -35,7 +35,7 @@ void OptimizeOne(int n){// TC:O(Root(n)) SC: O(N)
 	cout<<endl;
 }
 
-void OptimizeFurther(int n){
+void OptimizeFurther(int n){// TC: O(sqrt(n)) SC: O(1)
 
 		// Edge case: Square Numbers. Eg: 25
 		// If the root(n) is a factor of N. Eg: 30.
