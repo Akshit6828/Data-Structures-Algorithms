@@ -38,12 +38,7 @@ void OptimizeOne(int n){// TC:O(Root(n)  + NlogN) [if in sorted form] else TC: O
 	cout<<endl;
 }
 
-<<<<<<< HEAD
 void OptimizeFurther(int n){// TC: O(sqrt(n)) SC: O(1)
-=======
-void OptimizeFurther(int n){ // TC: O(n) SC: O(1)
->>>>>>> 58c5bc68f42b577987b4576c51d3dae0aea1623e
-
 		// Edge case: Square Numbers. Eg: 25
 		// If the root(n) is a factor of N. Eg: 30.
 		int i =0;
