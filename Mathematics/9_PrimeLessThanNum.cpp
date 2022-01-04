@@ -65,7 +65,7 @@ void sieveOfErathosisUsingVector(int n){ // TC(NLog(LogN)) [ By HP Series proved
 
 void sieveOfErathosisUsingBitSet(int n){ // TC(NLog(LogN)) [ By HP Series proved on wikipedia] SC: O(N)[Optimized by BitSet]
 
-	bitset<1000005> primesSet; // Optmization for space.
+	bitset<1000005> primesSet; // Optimization for space.
 	primesSet.set(); // Sets all bits to 1.
 	primesSet[0] = primesSet[1] = 0;
 
@@ -91,9 +91,9 @@ int main(){
 	while(t--){
 		int n;
 		cin>>n;
-		//BruteForce(n); cout<<endl;
-		//optimize1(n); cout<<endl;
-		//sieveOfErathosisUsingVector(n); cout<<endl;
+		BruteForce(n); cout<<endl;
+		optimize1(n); cout<<endl;
+		sieveOfErathosisUsingVector(n); cout<<endl;
 		sieveOfErathosisUsingBitSet(n); cout<<endl;
 	}
 return 0;
