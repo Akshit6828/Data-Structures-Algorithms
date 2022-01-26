@@ -1,0 +1,8 @@
+*.swp
+*.out
+*.run
+run
+*.exe
+*.bin/
+/.cph/
+/.vscode/
