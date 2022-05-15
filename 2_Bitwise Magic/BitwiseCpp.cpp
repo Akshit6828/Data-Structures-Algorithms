@@ -29,6 +29,7 @@ int main(){
     
     cout<<"num1 << 3 : "<<d<<" ( num1 * 2^3 => num * 8 )"<<endl;
     cout<<"num2 >> 2 : "<<e<<"  ( num2 / 2^2 => num / 4 )"<<endl;
+    cout<<"0 <<1 : "<<(0<<1)<<"  ( 0 * 2^1 => 0  )"<<endl;
     
     int num3 = -12; // signed int is represented by 2's complement.
     // binary representation of -12 is : 1111 1110
