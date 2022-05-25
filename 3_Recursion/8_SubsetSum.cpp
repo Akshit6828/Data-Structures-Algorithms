@@ -11,6 +11,7 @@ int subsetSum(vector<int> &x, int n,  int sum){
     else
     return subsetSum(x, n-1, sum) + subsetSum(x,n-1, sum - x[n-1]);
 }
+
 int main(){
     int n;
     cin>>n;

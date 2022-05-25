@@ -7,6 +7,15 @@ int JOS(int n, int k){
         return 0;
     else
         return (JOS(n - 1, k) + k )%n;
+
+    /*
+    Note: we always kill k-1 th person in the circle.
+    So
+    As after 1 pass, new :
+    0th becomes -> kth element
+    1 become -> k + 1 element
+    
+    */
 }
 
 int main(){
