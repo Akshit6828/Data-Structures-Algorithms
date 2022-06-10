@@ -1,5 +1,9 @@
 /*
 LC Link: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+
+Solution 1: Use 2 pointers to find any pair.
+Possible Solution 2: Use binary search to find the maxest index which is greater than target and then apply two pointers.
+
 */
 
 class Solution {
