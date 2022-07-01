@@ -69,7 +69,7 @@ vector<vector<string>> solveNQueens(int n){
     // Making a vector of strings each of '....' in the 
     for(int i = 0; i < n ; i++)
         board[i] = s;
-
+    
     solve(0, board, ans , n);
     return ans;
     
