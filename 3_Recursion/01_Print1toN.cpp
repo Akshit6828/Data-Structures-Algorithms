@@ -12,8 +12,11 @@ void fun1toN(int i, int n){ // TC: O(n) as we calling n functions. SC: O(n) as w
 // Try running the program and then see the output to see the backtracking working
 void Backtrack_1_to_N(int n){ // TC: O(n) Sc: O(n)
     cout<<"f("<<n<<") is called\n";
-    if(n < 1)
+    if(n < 1){
+        cout<<"N < 1 base case has arrived! Thus ending recursion and returning"<<endl;
         return;
+    }
+      
     cout<<"calling f("<<n-1<<")\n";
     Backtrack_1_to_N(n-1);
     cout<<n<<endl;
@@ -23,7 +26,7 @@ int main(){
     cin>>n;
     cout<<"printing 1 to N without backtracking"<<endl;
     fun1toN(1,n);
-    cout<<"printing 1 to N with backtracking"<<endl;
+    cout<<"printing 1 to N With Backtracking"<<endl; // Without using i++.
     Backtrack_1_to_N(n);
     return 0;
 }
