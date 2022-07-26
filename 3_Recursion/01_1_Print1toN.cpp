@@ -2,6 +2,19 @@
 #include<iostream>
 using namespace std;
 
+/*
+When to apply backtracking??
+Case 1) 
+If we are at initial state (or beginning of our algorithm say 0th index) and we know that
+we will be able to generate the current state ans if we know all (i+1) th indexes answer.
+
+Case 2) 
+If we are at last state (or ending of our algorithm say nth index) and we know that
+we will be able to generate the current state ans if we know all (i - 1) th indexes answer.
+Eg: fibonaci(N) can be easily computed if we know fibonacci(n - 1) and fibonacci(n-2);
+
+*/
+
 void fun1toN(int i, int n){ // TC: O(n) as we calling n functions. SC: O(n) as we put at max N fun calls() into stack.
     if(i > n)
         return;
