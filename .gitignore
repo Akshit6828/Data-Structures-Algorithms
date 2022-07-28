@@ -2,6 +2,13 @@
 *.bin
 /.cph
 **/.cph
+
 .vscode/
+/.vscode
+/.vscode/settings.json
+*/.vscode
+*/.vscode/*
+**/.vscode
+/.vscode/**
 **/.vscode
 **/.vscode/**
