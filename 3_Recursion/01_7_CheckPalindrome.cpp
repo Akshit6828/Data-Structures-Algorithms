@@ -2,6 +2,10 @@
 #include<iostream>
 using namespace std;
 
+
+/* Note:
+Whenever your base case return value is a part of answer, you should/can use `return`
+statement in the function call */
 bool checkPalindromeUsingRecursion(string s, int i, int n){
 
     if(s[i] != s[n - i - 1])
@@ -15,6 +19,7 @@ bool checkPalindromeUsingRecursion(string s, int i, int n){
 }
 
 int main(){
+    cout<<"Enter a string\n";
     string s;
     cin>>s;
     int len = s.length();

@@ -3,6 +3,11 @@
 using namespace std;
 
 /*
+
+Imp points of recursion:
+1) Base condition is an answer to a the smaller/larger problem which we know.
+2) We can always generate a formulae by recursive solutions.
+
 When to apply backtracking??
 Case 1) 
 If we are at initial state (or beginning of our algorithm say 0th index) and we know that
