@@ -1,6 +1,7 @@
 *.exe
 *.bin
 /.cph
+**/.cph
 .vscode/
 **/.vscode
 **/.vscode/**
