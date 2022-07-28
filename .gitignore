@@ -2,6 +2,7 @@
 *.bin
 /.cph
 /.vscode
+.vscode/
 */.vscode
 .vscode/*
 *.vscode
