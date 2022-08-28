@@ -15,7 +15,7 @@ struct Node{
     }
 };
 
-// Follow ups : If you wana make sure, if the element is 
+// Follow ups : If you wana make sure, if the element to be deleted pops out the last
 std::vector<int> DeleteNodeFromLeafToParent(Node *root, std:: vector<int> &orderedNodes){
     if(root == NULL)
         return order;

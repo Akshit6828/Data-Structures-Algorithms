@@ -39,6 +39,7 @@ int main(int argc, char *a[])
     //Write code here
     int h, m;
     cin>>h>>m;
+    
     int h1,m1;
     cin>>h1>>m1;
 
