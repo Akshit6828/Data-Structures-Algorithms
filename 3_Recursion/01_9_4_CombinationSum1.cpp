@@ -75,6 +75,7 @@ void findCombinations(int cur_index, vector<int> &arr, int target_sum, vector<in
     
 }
 int main(){
+    //vector<int> arr = {5,6,1,2,3,4}; this will also produce same results. We need not to sort the array
     vector<int> arr = {1,2,3,4,5,6};
     int target = 6;
     vector<int> ds;
