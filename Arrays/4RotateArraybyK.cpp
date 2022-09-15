@@ -5,9 +5,9 @@ using namespace std;
 // Rotating Array Anti Clock Wise
 void reverseArr(std::vector<int> &arr, int low, int high){
 	while(low< high){
-swap(arr[low], arr[high]);
-low++;
-high--;
+    swap(arr[low], arr[high]);
+    low++;
+    high--;
 }
 }
 void leftRotate(std::vector<int> &arr, int k){ // TC: O(N) , SC: O(1)
