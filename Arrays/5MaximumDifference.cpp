@@ -9,9 +9,10 @@ int maxDiff(vector<int> &arr){
     int minVal = arr[0];
     for(int i = 1; i<arr.size(); i++){
         if(arr[i]>=0)
-        maxD= max(maxD, arr[i] - minVal );
+            maxD= max(maxD, arr[i] - minVal );
         else
-         maxD= max(maxD, minVal - arr[i]  );
+            maxD= max(maxD, minVal - arr[i]  );
+        
         minVal = min(minVal, arr[i]);
     }
     return maxD;

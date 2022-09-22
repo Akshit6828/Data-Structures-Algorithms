@@ -3,13 +3,13 @@
 using namespace std;
 
 void moveZeroes(std::vector<int>& arr) {
-        int lastUnique =0;
-	    for(int i = 0; i<arr.size();i++){
-		    if(arr[i] !=0){
-			    swap(arr[i], arr[lastUnique]);
-			    lastUnique++;
-            }
+    int lastUnique =0;
+	for(int i = 0; i<arr.size();i++){
+		if(arr[i] !=0){
+			swap(arr[i], arr[lastUnique]);
+		    lastUnique++;
         }
+    }
 }
 
 int main(){

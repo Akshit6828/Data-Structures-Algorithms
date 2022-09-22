@@ -3,22 +3,24 @@
 
 int secondLargest(std::vector<int> arr){
 	
-int secondLargest = -1;
+    int secondLargest = -1;
 	int largest = arr[0];
 	for(int i = 1; i < arr.size(); i++){
-    int currentElement = arr[i];
-	if(currentElement > largest){ 
-			secondLargest = largest;
-			largest = currentElement;
-		}
-	else if(currentElement < largest ){
-		if(currentElement > secondLargest)
-			secondLargest = currentElement;
-}
-}
+    
+        int currentElement = arr[i];
+        
+        if(currentElement > largest){ 
+            secondLargest = largest;
+            largest = currentElement;
+        }
+        
+        else if(currentElement < largest ){
+            if(currentElement > secondLargest)
+                secondLargest = currentElement;
+        }
+    }
 
-return secondLargest;
-	
+    return secondLargest;
 }
 
 
