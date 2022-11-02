@@ -50,20 +50,25 @@ int tabulation_fibo(int n, vector<int> &dp){ // TC: O(N) SC:O(N)
 /*
 Optimization is based on the fact that we only 2 variables (prev1) and (prev2) which will be storing the f(n-1) and f(n-2) values.
 Thus, we only need 2 variables.
-prev1 = 1 step behind
-prev2  = 2 step behing
+prev1 = 1 step behind 
+prev2  = 2 step behind
 */
 int optimized_tabulation_fibo(int n){ // TC: O(n), SC: O(1)
     if(n <= 1)
         return n;
     
-    int prev2 = 0, prev1 = 1;
+    int prev2 = 0; // Initialize prev2 as 0.
+    int prev1 = 1; // Initialize prev1 as 1.
+
+    // Start from the 2 as fibo(2) is not known.
+    // Note: The Loop with 'i<=n' , because we are starting, 0th fibo as 0 and 1st fibo as 1. So for nth fibo, we need to go till <= 'n'.
+    
     for(int i = 2; i <=n ; i++){
         int current_fibo = prev1 + prev2;
         prev2 = prev1;
         prev1 = current_fibo;
     }
-    return prev1;
+    return prev1; // As at the last time for the loop, the current_fibo will be stored with `prev1`.
 }
 
 
