@@ -20,7 +20,8 @@ int recursive(int cur_step){ // TC: O(2^N), SC: O(2^n){Thinking of stack space}
 }
 
 // Top to Bottom Approach. (Not necessary but starts from N and goes to 0) Or Starts from opposite side of the base case and goes down.
-int memoize_steps(int cur_step, vector<int> &dp){ //TC: O(N) , SC: O(2*n){Stack space and DP array}
+
+int memoize_steps(int cur_step, vector<int> &dp){ // TC: O(N) , SC: O(2*n){Stack space and DP array}
         
         if(cur_step == 0 || cur_step == 1)
              return 1;
@@ -51,8 +52,8 @@ int tabulate_steps(int total_steps){ // TC: O(N), SC: O(N)
 /*
 Optimization is based on the fact that we only 2 variables (prev1) and (prev2) which will be storing the f(n-1) and f(n-2) values.
 Thus, we only need 2 variables.
-prev1 = unique ways for 1 step behind 
-prev2  = unique ways for 2 step behind
+prev1 = unique ways for 1 step behind.
+prev2  = unique ways for 2 step behind.
 */
 int optmized_Tabulation(int total_steps){ // TC: O(N), SC: O(1)
         if(total_steps == 1 || total_steps == 0)
@@ -75,6 +76,7 @@ void print1DVector(vector<int> &v){
     for (int i = 0; i < v.size(); i++)
         cout<<v[i]<<" ";
 }
+
 int main(){
     
     int n = 4;
