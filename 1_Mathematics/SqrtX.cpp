@@ -32,7 +32,7 @@ int main(){
     cin>>n;
     cout<<sqrt(n);
     // Linear search: 1 2 3 4 5 6 7 : TC: O(n)
-    // Linear search: 7 : TC: O(log(n))
+    // Binary search: 7 : TC: O(log(n))
     /*
     
     1 + 1/2 + 1/4 + 1/8 ..... n >0 == Log(n)
