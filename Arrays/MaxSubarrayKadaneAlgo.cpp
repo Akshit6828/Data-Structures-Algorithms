@@ -20,7 +20,8 @@ Code:
     }
     return res;
 */
-
+#include<bits/stdc++.h>
+using namespace std;
 class Solution {
 public:
     int maxSubArray(vector<int>& arr) { //TC: O(N) , SC: O(1)
@@ -36,3 +37,10 @@ public:
 
     }
 };
+
+int main(){
+    vector<int> vt = {-1,-1,3,-4,5,-1,3};
+    Solution obj;
+    int ans = obj.maxSubArray(vt);
+    cout<<ans<<endl;
+}
