@@ -12,7 +12,7 @@ struct Node{
     }
 };
 
-int main(){
+int main(){ 
     Node *head = new Node(10);
     Node *node1 = new Node(20);
     Node *node2 = new Node(30);
