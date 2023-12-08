@@ -5,6 +5,7 @@
 using namespace std;
 
 /*
+Problem: Print all subsequence of a given array
 We have 2 choices:
 1) Either to "TAKE" the current index element in our data structure.
 2) Either to "NOT TAKE" the current index element and move to next element.
