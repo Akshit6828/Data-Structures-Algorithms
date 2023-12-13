@@ -12,7 +12,7 @@ We have 2 choices:
 
 Base Case Deduction:
 We keep have these both choices until we reach the index from which it is impossible to take choice.
-So we keep base case as: if(cur_ind == n) // N is non-exisitin index in an array of size n which follows 0 based indexing.
+So we keep base case as: if(cur_ind == n) // N is non-exisiting index in an array of size n which follows 0 based indexing.
 We choose this base case as for this case, we know that we are not going to have any choice, just we need to return the desired answer made till here.
 */
 

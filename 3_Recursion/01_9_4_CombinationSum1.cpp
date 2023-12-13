@@ -32,7 +32,7 @@ Every possible combination is made either by multiple/single take(T) or Not-Take
 Eg: Array [2,3,6,7,] and target = 7. The combination [2,2,3] is made by following decision.
 [ TT, T, X, X].
 
-Note: We only decided the following combination after exploring all indexes(i == n) and then deciding if this combination sum = target or not.
+Note: We only decided the following combination after exploring all indexes(i == n) and then deciding if this combination sum =  target or not.
 
 1) For every index, we have 2 options take or not take.
 2) So for every index, we can have 2 recursive functions, 1. to handel take and 2. to handel not take.
@@ -75,8 +75,8 @@ void findCombinations(int cur_index, vector<int> &arr, int target_sum, vector<in
     
 }
 int main(){
-    //vector<int> arr = {5,6,1,2,3,4}; this will also produce same results. We need not to sort the array
-    vector<int> arr = {1,2,3,4,5,6};
+    vector<int> arr = {5,6,1,2,3,4}; // this will also produce same results as below vector. We NEED NOT to sort the array
+    // vector<int> arr = {1,2,3,4,5,6};
     int target = 6;
     vector<int> ds;
     vector<vector<int>> combinations;

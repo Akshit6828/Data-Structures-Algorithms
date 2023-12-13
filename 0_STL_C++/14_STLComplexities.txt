@@ -1,0 +1,52 @@
+Vector (std::vector):
+- Access (Random): O(1)
+- Insertion/Deletion (End): O(1) amortized
+- Insertion/Deletion (Middle): O(N)
+- Search: O(N) linear search, O(log N) binary search (if sorted)
+
+
+Pair (std::pair):
+- Access (First/Second): O(1)
+
+Stack (std::stack):
+- Push/Pop: O(1)
+- Access (Top): O(1)
+
+Queue (std::queue):
+- Push/Pop (Back): O(1)
+- Pop (Front): O(N) - However, if implemented as a deque, it can be O(1)
+
+Deque (std::deque):
+- Access (Random): O(1)
+- Insertion/Deletion (Front/Back): O(1)
+
+List (std::list):
+- Access (Sequential): O(N)
+- Insertion/Deletion (Any): O(1)
+
+Priority Queue (std::priority_queue):
+- Insertion: O(log N)
+- Access (Top): O(1)
+- Deletion: O(log N)
+
+Set (std::set):
+- Insertion/Deletion/Search: O(log N)
+
+Unordered Set (std::unordered_set):
+- Average Insertion/Deletion/Search: O(1) - constant time on average, but can degrade to O(N) in worst cases
+
+Multiset (std::multiset):
+- Insertion/Deletion/Search: O(log N)
+
+Map (std::map):
+- Insertion/Deletion/Search: O(log N)
+
+Unordered Map (std::unordered_map):
+- Average Insertion/Deletion/Search: O(1) - constant time on average, but can degrade to O(N) in worst cases
+
+MultiMap (std::multimap):
+- Insertion/Deletion/Search: O(log N)
+
+
+These complexities are general guidelines, and actual performance might vary depending on the implementation details and specific use cases.
+It's important to consider the characteristics of the problem at hand when choosing the appropriate data structure to achieve the desired time and space complexities.

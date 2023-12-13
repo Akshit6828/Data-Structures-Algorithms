@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 // Problem 1: 
 // Start deleting the roots and give the order such that, they would be deleted.
 // Parent should be the last one to be deleted and the parent whose node has been deleted would be having the more priority than the other parents.
@@ -19,8 +19,8 @@ struct Node{
 std::vector<int> DeleteNodeFromLeafToParent(Node *root, std:: vector<int> &orderedNodes){
     if(root == NULL)
         return order;
-    deleteFromNode(root->left, order);
-    deleteFromNode(root->right, order);
+    DeleteNodeFromLeafToParent(root->left, order);
+    DeleteNodeFromLeafToParent(root->right, order);
     orderedNodes.emplace_back(root->key);
     if(root -> left!=NULL)
         root->left = NULL;

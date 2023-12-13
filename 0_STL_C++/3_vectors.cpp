@@ -3,8 +3,8 @@ using namespace std;
 
 /*
 Vectors are Dynamic arrays whose size can be extended or decreased.
-Usefull for such operations where size can be increased or decreased.
-VECTORS ARE IMPLEMENTED INTERNALLY AS SINGLY LINKED LIST
+Useful for such operations where size can be increased or decreased.
+VECTORS ARE IMPLEMENTED INTERNALLY AS DYNAMIC ARRAYS WHICH WORK EXPANDS/SHRINKS AS 2^N.
 
 */
 void explainVector(){

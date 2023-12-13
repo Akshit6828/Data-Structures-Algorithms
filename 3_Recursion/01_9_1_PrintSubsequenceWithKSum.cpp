@@ -20,10 +20,10 @@ void printSubsequenceWithKSum(int ind, vector<int> &arr , int sum, vector<int> &
 
     // Remove or back-track
     ds.pop_back();
-    sum-=arr[ind];
+    sum-=arr[ind]; // BACK TRACKING
 
     // Not Take
-    printSubsequenceWithKSum(ind +1, arr,sum,ds,n,K);
+    printSubsequenceWithKSum(ind +1, arr,sum,ds,n,K); // same as line 19, since we always go to next index in recursion here. TAKE/NOT-TAKE is handled by sum variable.
 }
 int main(){
     int n, sum;

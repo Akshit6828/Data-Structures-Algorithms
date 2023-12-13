@@ -1,7 +1,12 @@
 #include<bits/stdc++.h>
 #include<iostream>
 using namespace std;
-
+/*
+Problem:
+Given an integer array nums that may contain duplicates, return all possible 
+subsets (the power set).
+The solution set must not contain duplicate subsets. Return the solution in any order.
+*/
 void printVector(vector<vector<int>> vt){
     for(int i = 0; i < vt.size(); i++){
         cout<<"[ ";
@@ -32,7 +37,7 @@ void SubsetSum2(int ind, vector<int> &arr, vector<int> &ds, vector<vector<int>> 
 
 
 int main(){
-    vector<int> arr = {3,1,3};
+    vector<int> arr = {3,1,3,3,5};
     vector<int> ds;
     vector<vector<int>> uniqueSubsequences;
 

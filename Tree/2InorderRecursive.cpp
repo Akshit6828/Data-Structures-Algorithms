@@ -23,6 +23,15 @@ void printInorder(Node *root){ // TC: O(n). SC: O(h) where h = height of tree(no
         printInorder(root->right);
     }
 }
+
+void StiverInorder(Node * root){
+    if(root == NULL)
+        return;
+    StiverInorder(root->left);
+    cout<<root->key<<" ";
+    StiverInorder(root->right);
+}
+
 int main(){
     Node *root = new Node(10);
     root->left = new Node(20);
@@ -30,5 +39,7 @@ int main(){
     root->right->left = new Node(40);
     root->right->right = new Node(50);
     printInorder(root);
+    cout<<endl;
+    StiverInorder(root);
     return 0;
 }

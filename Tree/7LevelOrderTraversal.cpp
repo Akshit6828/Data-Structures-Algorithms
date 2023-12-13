@@ -55,9 +55,9 @@ int main(){
     root->right->right = new Node(50);
     root->right->right->right = new Node(60);
     
-    vector<vector<int>> levelOrdereNodes;
-    printLevelOrder(root, levelOrdereNodes);
-    /*for(auto &level: levelOrdereNodes){
+    vector<vector<int>> levelOrderedNodes;
+    printLevelOrder(root, levelOrderedNodes);
+    /*for(auto &level: levelOrderedNodes){
             for(auto &node: level)
                 cout<<node<<" ";
             cout<<endl;

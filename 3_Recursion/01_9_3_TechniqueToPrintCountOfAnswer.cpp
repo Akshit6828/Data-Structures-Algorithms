@@ -37,7 +37,7 @@ return result;
 int CountSubsequenceWithKSum(int ind, vector<int> &arr, int sum, int n, int K){ // TC:O(2^n) as we have 2 options(take/not take) for each of n indexes.
     
     /* 
-    If array contains ONLY POSITIVE, we can slighlty optimize it by adding this base case
+    If array contains ONLY POSITIVE, we can slighlty optimize it here only by adding this base case also
     if(sum > K) 
         return 0;
     knowing my answer will only exceed if I do take/not take from current index(ind)
