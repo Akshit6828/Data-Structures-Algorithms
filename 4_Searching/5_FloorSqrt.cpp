@@ -11,14 +11,14 @@ int floorSqrt(int n){
     int ans = -1;
 
     while(low <=high){
-        int mid = (low + high) >>1;
+        int mid = (low + high) >>1; // (low + high) / 2;
         int sqrtMid = mid * mid;
 
         if(sqrtMid > n){
             high = mid - 1;
         }
         else if(sqrtMid < n){
-            ans = mid;
+            ans = mid; // This is ans till now which we got and we will be checking for higher value for mid for which mid*mid = n.
             low = mid + 1;
         }
         else

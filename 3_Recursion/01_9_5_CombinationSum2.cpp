@@ -62,6 +62,8 @@ void findUniqueCombinations(int index, vector<int> &arr, int target, vector<int>
 
     for(int cur_index = index; cur_index < arr.size(); cur_index++){
         cout<<"Inside Loop with cur_ind = "<<cur_index<<endl;
+        // NOTE: First write cur_index > index and then write arr[cur_index] == arr[cur_index - 1] since what happens if we write arr[cur_index] == arr[cur_index - 1], it computes arr[0] == arr[-1] which generates RUNTIME error.
+        // SO VERY VERY IMP THING TO NOTE
         if(cur_index > index && arr[cur_index] == arr[cur_index - 1]){ // Check to avoid picking up same elements twice
             cout<<"Skipping arr["<<cur_index<<"] as its equal to arr["<<cur_index-1<<"]";
             continue;

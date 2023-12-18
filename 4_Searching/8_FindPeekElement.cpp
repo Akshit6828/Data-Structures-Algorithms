@@ -12,7 +12,7 @@ int peekElement(vector<int> &x){
         deb(mid);
 
        /*     
-        Condition 1: Checking if we have reachd the first element
+        Condition 1: Checking if we have reached the first element
         OR
         Cond 2: If we are in the mid way of the array and x[mid -1] <=x[mid]
         AND 

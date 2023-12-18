@@ -15,7 +15,7 @@ int gcd(long int a, long int b){
 
 /* IMPORTANT POINTS ON LCM:
 1) LCM  = Smallest number which is divisible by both number(a,b). or First(Least) Common Multiple of A and B.
-2) LCM  = greater or equall to larger of A and B.
+2) LCM  = greater or equal to larger of A and B. ie. LCM OF a,b is always >= max(a,b)
 
 IMPORTANT CASES:
 1) If one number divides other: LCM = Max(A,B)

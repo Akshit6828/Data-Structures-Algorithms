@@ -8,7 +8,7 @@ int removeDuplicates(std::vector<int>& arr) { // TC: O(n)
             return 0;
         int latestUniqueIndex = 1; // The index where the new unique element will be inserted.
 	    for(int i = 1; i<arr.size(); i++){
-		    if(arr[i] != arr[latestUniqueIndex - 1]){ 
+		    if(arr[i] != arr[latestUniqueIndex - 1]){ // We found a new unique element which is not equal to x[i]
 		        arr[latestUniqueIndex] = arr[i];
                 latestUniqueIndex++;
             }

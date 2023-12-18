@@ -19,7 +19,7 @@ void generatePermutations(int ind, vector<int> &arr, vector<vector<int>> &permut
 
     for(int a = ind ; a < arr.size(); a++){
         swap(arr[a], arr[ind]);
-        generatePermutations(ind + 1, arr, permutations);
+        generatePermutations(ind + 1, arr, permutations); // Note: here next call would be for (ind + 1) and not (j+1) since now we are intereset in swapping the (ind) with next set of indexes on right and not the (j) with next possible set of (j). Bcz if we use j, it will swap next j's on RHS with itself.
         swap(arr[a], arr[ind]);
     }
 }

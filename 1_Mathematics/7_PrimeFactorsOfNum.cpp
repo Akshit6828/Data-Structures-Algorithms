@@ -35,7 +35,7 @@ void BruteForce(int n){// TC: O(N * Sqrt(N) * Log(n))= O(N^3/2 Log(n)) SC: O(1)
 void OptimizeOne(int n){ // TC:O(Sqrt(n)*Log(n))  SC: O(1)
 // Based on facts:
 // 1) Factors occur in pair{x, n/x}.
-// 2) Any number can be written as the prodcut of primes.
+// 2) Any number can be written as the product of primes.
 	
 // Algo:1) Find the first prime factor  and if there exist any prime number as factor then it will be in range of O- Root(n)
 // 2) Once we find the prime factor, keep dividing the number N, until it is divinding N and then assign new value of number left to N. 

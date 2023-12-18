@@ -60,7 +60,7 @@ void explainPriorityQueue(){ // push(),pop() in log(n), top-> O(1)
         for(auto it: mp){
             cout<<it.first<<" "<<it.second<<endl;
         }
-        pq3.pop();
+        pq3.pop(); // DELETING: O(LogN) operation
     }
 
      // IMP Info:
