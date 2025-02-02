@@ -1,0 +1,53 @@
+// Online C++ compiler to run C++ program online
+#include <bits/stdc++.h>
+using namespace std;
+
+void printMap(const multimap<int, int> &mp) {
+    cout<<"Printing Map"<<endl;
+    for (auto x : mp)
+        cout << x.first << " - " << x.second << endl;
+        
+    cout<<endl;
+}
+
+void sortMap(multimap<int, int> &mp){
+     vector<pair<int, int>> vec(mp.begin(), mp.end());
+
+    
+    sort(vec.begin(), vec.end(), [](const pair<int, int> &a, const pair<int, int> &b) {
+        if(a.first == b.first)
+            return a.second < b.second;
+        return a.first < b.first; 
+    });
+    
+   mp.clear();  // Remove old data from the map
+    for (auto &p : vec) {
+        mp.insert(p);  // Insert sorted elements back into multimap
+    }
+
+    printMap(mp);  // Print the sorted multimap
+}
+
+void solve() {
+    int n;
+    cin >> n;
+
+    multimap<int, int> mp;
+
+    while (n--) {
+        int a, b;
+        cin >> a >> b;
+        mp.insert({a, b});
+    }
+    sortMap(mp);
+}
+
+int main() {
+    int t;
+    cin >> t;
+
+    while (t--) {
+        solve();
+    }
+    return 0;
+}
