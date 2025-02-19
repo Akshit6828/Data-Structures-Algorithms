@@ -71,7 +71,7 @@ void explainPriorityQueue(){ // push(),pop() in log(n), top-> O(1)
 
     // Priority Queue of Pairs
     priority_queue<pair<int, int>> pqq;  // Max-Heap (Highest key first)
-    priority_queue<pair<int, int>, vector<pair<int,int>> , greater<pair<int,int>> > pqq;  // Min-Heap (Lowest key first)
+    // priority_queue<pair<int, int>, vector<pair<int,int>> , greater<pair<int,int>> > pqq;  // Min-Heap (Lowest key first)
 
     pqq.push({12, 1});
     pqq.push({11, 33});
