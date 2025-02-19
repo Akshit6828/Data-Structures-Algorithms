@@ -69,7 +69,18 @@ void explainPriorityQueue(){ // push(),pop() in log(n), top-> O(1)
       * Thus we have to iterate using while() loop only
       */
 
+    // Priority Queue of Pairs
+    priority_queue<pair<int, int>> pqq;  // Max-Heap (Highest key first)
 
+    pqq.push({12, 1});
+    pqq.push({11, 33});
+    pqq.push({4, 2});
+
+    while (!pqq.empty()) {
+        pair<int, int> top = pqq.top();
+        cout << top.first << " => " << top.second << endl;
+        pqq.pop();
+    }
 
 }
 
